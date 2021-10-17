@@ -1,0 +1,366 @@
+/* MOBILE */
+
+@media screen and (max-width: 757px) {
+  
+  body{
+    /* background-color: purple; */
+    font-size: size 16px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .en-tete{
+      font-size: 32px;
+  }
+
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 768px) {
+  
+  body{
+    /* background-color: blue; */
+    font-size: size 18px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .en-tete{
+    /* font-size: 48px; */
+    font-size: 18px;    
+    max-height: 1.125em;
+}
+
+} 
+
+/* BIG */
+
+@media screen and (min-width: 1200px) {
+  
+  body{
+    /* background-color: red; */
+    font-size: size 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+} 
+
+
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/static/Mulish-Regular.ttf");
+}
+
+.title{
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #1b3c87;
+}
+
+.textes {
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #546da5;
+}
+
+.body{
+  max-width: 1440px;
+}
+
+.left{
+  max-width: 640px;
+}
+
+.en-tete{
+  background-color: #f5f8ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 50px;
+  margin-bottom: 3rem;
+}
+
+.en-tete img {
+  max-width: 2rem;
+}
+
+.name_of_company{
+  display: flex;
+  
+}
+
+.name_of_company p{
+  margin-left: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.en-tete .link{
+  text-align:right;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+}
+
+.link a{
+  color: #546da5;
+  background-color: #ffff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  
+}
+
+
+
+.bloc{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.bloc .left{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bloc .right{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bloc .title{
+  font-size:2rem;
+}
+
+.bloc .button{
+  background-color: #46dbc9;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+}
+
+.bloc_feature{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bloc_feature .icon{
+  max-width:3rem;
+}
+
+.feature{
+  border: 0.2rem solid #f0f4fb;
+  border-radius: 10px;
+  margin: 0.5em;
+  margin-bottom: 2rem;
+}
+
+.elements{
+  margin: 0.5em;
+  margin-top: -1.5rem;
+
+}
+
+.elements svg{
+  background-color :#d4f7f3;
+  fill: #46dbc9;
+  border-radius: 10px;
+  
+}
+
+.elements :first-of-type{
+  padding: 0.2em;
+  font-size: 18px;
+  font-weight: bold;
+ }
+
+
+ .bloc_temoignage{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+ }
+
+ .temoignage{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+ }
+
+ .temoignage img{
+   border-radius: 50%;
+ }
+
+ .temoignage .textes{
+   text-align: left;
+ }
+
+ .sponsor{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  
+ }
+ .sponsor img{
+   max-width: 100px;
+   margin-top: auto;
+   margin-bottom: auto;
+ }
+
+ .footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+ }
+ .footer .link{
+   margin-top: 1rem;
+ }
+ 
+
+ .reseaux{
+  display:flex;
+  justify-content: flex-end;
+
+  margin-top: 50px;
+  
+ }
+
+ .reseaux .icon{
+  fill: #46dbc9;
+  background-color: #d4f7f3;
+  max-width: 2rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+
+ }
+
+ .legal_content{
+   text-align:center;
+ }
+
+
+/* ##################################################################
+##################        TARIFS        ########################
+################################################################## */
+
+.forfait_bloc{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+  
+.pricing_bloc{
+  text-align:center;
+}
+
+.pricing_bloc .title{
+  font-size: 30px;
+  
+}
+
+.forfait{
+  border: solid #f0f4fb;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.forfait:hover{
+  border: solid #46dbc9;
+}
+
+.forfait .title{
+  margin: 0rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.forfait .textes:first-of-type{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+
+.description{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+ 
+}
+
+.description .textes {
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.description .icon{
+  min-width: 2rem;
+  fill: #46dbc9;
+}
+
+.description #not_green{
+  fill: gray;
+}
+
+.description #barre{
+  text-decoration:line-through
+}
+
+.forfait .button{
+  background-color: #ffff;
+  border: 2px solid gray;
+  margin-top:2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+}
+
+.forfait .button:hover{
+  background-color: #46dbc9;
+  border: none;
+}
+
+.question_bloc{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.frequent_question{
+  text-align: left;
+  
+}
+
+.frequent_question .title{
+  font-size: 20px;
+}
+
+.frequent_question .textes{
+  margin-left: 2rem;
+  border-left: 3px solid #46dbc9;
+  padding-left: 1rem;
+}

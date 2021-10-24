@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-reboot@4.4.1/reboot.css">
+    <link rel="stylesheet" href="css\reboot.css">
     <link rel="stylesheet" href="css\style.css">
     <title>Accueil</title>
 </head>
@@ -23,7 +24,7 @@
         </div>
     </div>
     <main>
-        <div class="bloc">
+        <div class="bloc" id="reverse">
             <div class="left">
                 <p class="title">Revolutionnez votre worflow !</p>
                 <p class="textes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quibusdam
@@ -55,7 +56,7 @@
             </div>
         </div>
 
-        <div class="bloc">
+        <div class="bloc" id="reverse">
             <div class="left">
                 <p class="title">Amet et quis eu laboris qui enim qui voluptate sit
                 </p>
@@ -155,30 +156,35 @@
             </div>
         </div>
 
-        <div class="bloc_temoignage">
-            <div class="left">
+        <div class="bloc_temoignage" id="reverse">
+            <div class="grp_temoignage">
+                <div class="spacer">
+                </div>
                 <p class="title">Nos clients adorent notre solution</p>
-                <div class="temoignage">
-                    <div class="left">
-                        <img src="img\user-01.png" alt="">
-                        <p class="title">Sara Michu</p>
-                        <p class="textes">" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos doloribus
-                            deleniti optio fugit
-                            consequuntur eum illo sequi aliquam illum labore? "</p>
-                    </div>
-                    <div class="right">
-                        <img src="img\user-02.png" alt="">
-                        <p class="title">John Doe</p>
-                        <p class="textes"> " Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                            tempora
-                            soluta maxime
-                            vel
-                            earum beatae distinctio minima laboriosam nihil iste."</p>
+
+
+                <div class="left">
+                    <div class="temoignage">
+                        <div class="left">
+                            <img src="img\user-01.png" alt="">
+                            <p class="title">Sara Michu</p>
+                            <p class="textes">" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos doloribus
+                                deleniti optio fugit
+                                consequuntur eum illo sequi aliquam illum labore? "</p>
+                        </div>
+                        <div class="right">
+                            <img src="img\user-02.png" alt="">
+                            <p class="title">John Doe</p>
+                            <p class="textes"> " Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                tempora
+                                soluta maxime
+                                vel
+                                earum beatae distinctio minima laboriosam nihil iste."</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="right">
+            <div class="right" id="reverse">
                 <svg viewBox="0 0 20413 21060" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
                     clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
                     <path
@@ -275,11 +281,11 @@
         </div>
 
         <div class="sponsor">
-            <img src="img\instantlogosearch-burger-king.png" alt="">
-            <img src="img\instantlogosearch-ebay.png" alt="">
-            <img src="img\instantlogosearch-netflix.png" alt="">
-            <img src="img\instantlogosearch-starbucks.png" alt="">
-            <img src="img\instantlogosearch-walmart-2.png" alt="">
+            <img src="img\instantlogosearch-burger-king.png" alt="Burger_King">
+            <img src="img\instantlogosearch-ebay.png" alt="Ebay">
+            <img src="img\instantlogosearch-netflix.png" alt="Netflix">
+            <img src="img\instantlogosearch-starbucks.png" alt="Starbucks">
+            <img src="img\instantlogosearch-walmart-2.png" alt="Walmart">
         </div>
 
         <div class="footer">
@@ -318,7 +324,10 @@
             </div>
         </div>
         <div class="legal_content">
-            <p class="textes">HeyStack © 2020 Mentions Légales C.G.V</p>
+            <p class="textes" id="legal_medium_hide">HeyStack © 2020 </p>
+            <p class="textes" id="legal_medium_hide">Mentions Légales</p>
+            <p class="textes" id="legal_medium_hide">C.G.V</p>
+            <p class="textes" id="legal_mobile_hide">HeyStack © 2020 Mentions Légales C.G.V</p>
 
         </div>
     </main>

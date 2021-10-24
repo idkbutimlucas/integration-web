@@ -1,23 +1,375 @@
-/* MOBILE */
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish/static/Mulish-Regular.ttf");
+}
 
-@media screen and (max-width: 757px) {
+.title{
+  font-weight: 900;
+  line-height: 1.2;
+  color: #1b3c87;
+}
+
+.textes {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #546da5;
+}
+
+body{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ######################################
+################### MOBILE ###################
+###################################### */
+
+@media screen and (min-width: 365px) {
   
   body{
     /* background-color: purple; */
     font-size: size 16px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .en-tete{
       font-size: 32px;
   }
 
+  .bloc .left{
+    max-width: 640px;
+  }
+
+  .en-tete{
+    background-color: #f5f8ff;
+    min-height: 50px;
+    padding-top: 1rem;
+  }
+
+  .en-tete img {
+    max-width: 2rem;
+  }
+
+  .name_of_company{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 1rem;
+  }
+
+  .name_of_company p{
+    margin-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .en-tete .link{
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .link a{
+    color: #546da5;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .bloc{
+    margin-bottom: 3rem;
+  }
+
+  .bloc:first-child{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: #f5f8ff;
+  }
+
+  .bloc#reverse{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .bloc .left{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+  }
+
+  .bloc .right{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .bloc .title{
+    font-size:2rem;
+  }
+
+  .bloc .button{
+    background-color: #46dbc9;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .bloc_feature .icon{
+    max-width:3rem;
+  }
+
+  .feature{
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+    margin: 0.5em;
+    margin-bottom: 2rem;
+  }
+
+  .elements{
+    margin: 0.5em;
+    margin-top: -1.5rem;
+
+  }
+
+  .elements svg{
+    background-color :#d4f7f3;
+    fill: #46dbc9;
+    border-radius: 10px;
+    
+  }
+
+  .elements :first-of-type{
+    padding: 0.2em;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .bloc_temoignage{
+    /* display: flex; */
+    margin-bottom: 1rem;
+  }
+  .grp_temoignage{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .bloc_temoignage#reverse{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .right svg{
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .grp_temoignage .spacer{
+    height: 0.5rem;
+    width: 3rem;
+    border-radius: 10px;
+    background-color: #46dbc9;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grp_temoignage .title{
+    font-size:1.5rem;
+    text-align: center;
+  }
+
+  .temoignage{
+    text-align: center;
+  }
+
+  .temoignage .left{
+    padding: 1rem;
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .temoignage .right{
+    padding: 1rem;
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+  }
+
+  .temoignage img{
+    border-radius: 50%;
+  }
+
+  .temoignage .textes{
+    text-align: left;
+  }
+
+  .sponsor{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align:center;
+    background-color: #f5f8ff;
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    
+  }
+
+  .sponsor img{
+    max-width: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .footer{
+    background-color: #f5f8ff;
+    padding-top: 1rem;
+  }
+
+  .footer .link{
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .reseaux{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+  }
+
+  .reseaux .icon{
+    fill: #46dbc9;
+    background-color: #d4f7f3;
+    max-width: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 10px;
+
+  }
+
+  .legal_content{
+    text-align:center;
+    margin-top: 1rem;
+  }
+
+  .legal_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    grid-auto-rows: minmax(1rem, auto);
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+  }
+
+  .legal_content .textes#legal_mobile_hide{
+    display: none;
+  }
 }
 
-/* MEDIUM */
+/* ######################################
+################### MEDIUM ###################
+###################################### */
+@media screen and (min-width: 600px) {
 
-@media screen and (min-width: 768px) {
+  .en-tete{
+    /* font-size: 48px; */
+    font-size: 18px;    
+    max-height: 1.125em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding-top: 2rem;
+  }
+
+   .name_of_company{
+    display: flex;
+    justify-content:left;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  } 
+
+  .bloc_feature{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items:center;
+    background-color: #f5f8ff;
+    overflow: auto;
+  }
+
+  .sponsor img{
+    max-width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .name_of_company{
+    justify-content: center;
+    font-size:2rem;
+  }
+
+  .footer .link{
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: -8rem;
+  }
+
+
+  .reseaux{
+    display:flex;
+    justify-content: center;
+    padding-left: 12rem;
+    padding-bottom: 1rem;
+    margin-top: -3rem;
+    
+  }
+
+  .reseaux .icon{
+    fill: #46dbc9;
+    background-color: #d4f7f3;
+    max-width: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 10px;
+
+  }
+
+  .legal_content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .legal_content .textes#legal_medium_hide{
+    display: none;
+  }
+
+  .legal_content .textes#legal_mobile_hide{
+    display: flex;
+  }
+
+}
+
+/* #####################################################################*/
+
+@media screen and (min-width: 760px) {
   
   body{
     /* background-color: blue; */
@@ -30,233 +382,321 @@
     /* font-size: 48px; */
     font-size: 18px;    
     max-height: 1.125em;
-}
-
-} 
-
-/* BIG */
-
-@media screen and (min-width: 1200px) {
-  
-  body{
-    /* background-color: red; */
-    font-size: size 20px;
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
+  .bloc .left{
+    max-width: 640px;
+  }
+  
+  .en-tete{
+    background-color: #f5f8ff;
+    display: flex;
+    min-height: 50px;
+    padding-top: 1rem;
+  }
+  
+  .en-tete img {
+    max-width: 2rem;
+  }
+  
+  .name_of_company{
+    display: flex;
+    margin-left: 1rem;
+  }
+  
+  .name_of_company p{
+    margin-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .en-tete .link{
+    position:absolute;
+    right: 10%;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5rem;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  
+  .link a{
+    color: #546da5;
+    padding: 0.5rem;
+  }
+  
+  .bloc{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 3rem;
+  }
+  
+  .bloc:first-child{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: #f5f8ff;
+  }
+  
+  .bloc .left{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+  }
+  
+  .bloc .right{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .bloc .title{
+    font-size:2rem;
+  }
+  
+  .bloc .button{
+    background-color: #46dbc9;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+  }
+  
+  .bloc_feature{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bloc_feature .icon{
+    max-width:3rem;
+  }
+  
+  .feature{
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+    margin: 0.5em;
+    margin-bottom: 2rem;
+  }
+  
+  .elements{
+    margin: 0.5em;
+    margin-top: -1.5rem;
+  
+  }
+  
+  .elements svg{
+    background-color :#d4f7f3;
+    fill: #46dbc9;
+    border-radius: 10px;
+    
+  }
+  
+  .elements :first-of-type{
+    padding: 0.2em;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bloc_temoignage{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .grp_temoignage{
+    width: 100%;  
+  }
+  
+  .right svg{
+    width: 100%;
+    margin-left: 2rem;
+    padding-top: 8rem;
+  }
+  
+  .grp_temoignage .spacer{
+    height: 0.5rem;
+    width: 3rem;
+    border-radius: 10px;
+    background-color: #46dbc9;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .grp_temoignage .title{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  
+  .temoignage{
+    text-align: center;
+  }
+  
+  .temoignage .left{
+    padding: 1rem;
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .temoignage .right{
+    padding: 1rem;
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+  }
+  
+  .temoignage img{
+    border-radius: 50%;
+  }
+  
+  .temoignage .textes{
+    text-align: left;
+  }
+  
+  .sponsor{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align:center;
+    background-color: #f5f8ff;
+  }
+  .sponsor img{
+    max-width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .footer .link{
+    margin-top: 1rem;
+  }
+
+  .reseaux .icon{
+    fill: #46dbc9;
+    background-color: #d4f7f3;
+    max-width: 2rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 10px;
+  
+  }
+  
+  .legal_content{
+    text-align:center;
+  }
+
+  .legal_content .textes#legal_medium_hide{
+    display: none;
+  }
+  
+}
+
+/* ######################################
+################### BIG ###################
+###################################### */
+@media screen and (min-width: 1023px) {
+
+  .bloc#reverse{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bloc_temoignage#reverse{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bloc_feature{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }  
+
+  .sponsor{
+    justify-content: center;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #f5f8ff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer .name_of_company{
+    justify-content: left;
+    margin-left: 0rem;
+  }
+
+  .footer .link{
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .reseaux{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+}
+
+
+/* #####################################################################*/
+
+@media screen and (min-width: 1280px) {
+  
+  body{
+    font-size: size 20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .bloc_feature{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bloc_temoignage#reverse{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grp_temoignage{
+   width: 150%; 
+  }
+
+  .bloc_temoignage .right#reverse{
+    width: 50%;
+    margin-left: 20rem;
+  }
+
+  .right svg{
+   width: 100%;
+   margin-left: 1rem;
+   padding-top: 3rem;
+   display: flex;
+  } 
+
+   .temoignage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+   }
+
+   .temoignage .left{
+    padding: 1rem;
+    border: 0.2rem solid #f0f4fb;
+    border-radius: 10px;
+    margin-bottom: 0rem;
+   } 
+
 } 
-
-
-
-@font-face {
-  font-family: "Mulish";
-  src: url("../fonts/mulish/static/Mulish-Regular.ttf");
-}
-
-.title{
-  font-weight: 900;
-  line-height: 1.2em;
-  color: #1b3c87;
-}
-
-.textes {
-  font-weight: 400;
-  line-height: 1.5em;
-  color: #546da5;
-}
-
-.body{
-  max-width: 1440px;
-}
-
-.left{
-  max-width: 640px;
-}
-
-.en-tete{
-  background-color: #f5f8ff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-height: 50px;
-  margin-bottom: 3rem;
-}
-
-.en-tete img {
-  max-width: 2rem;
-}
-
-.name_of_company{
-  display: flex;
-  
-}
-
-.name_of_company p{
-  margin-left: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.en-tete .link{
-  text-align:right;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 0.5rem;
-}
-
-.link a{
-  color: #546da5;
-  background-color: #ffff;
-  padding: 0.5rem;
-  border-radius: 10px;
-  
-}
-
-
-
-.bloc{
-  /* display: flex; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-
-.bloc .left{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.bloc .right{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.bloc .title{
-  font-size:2rem;
-}
-
-.bloc .button{
-  background-color: #46dbc9;
-  border: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 10px;
-}
-
-.bloc_feature{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.bloc_feature .icon{
-  max-width:3rem;
-}
-
-.feature{
-  border: 0.2rem solid #f0f4fb;
-  border-radius: 10px;
-  margin: 0.5em;
-  margin-bottom: 2rem;
-}
-
-.elements{
-  margin: 0.5em;
-  margin-top: -1.5rem;
-
-}
-
-.elements svg{
-  background-color :#d4f7f3;
-  fill: #46dbc9;
-  border-radius: 10px;
-  
-}
-
-.elements :first-of-type{
-  padding: 0.2em;
-  font-size: 18px;
-  font-weight: bold;
- }
-
-
- .bloc_temoignage{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
- }
-
- .temoignage{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
-  text-align: center;
- }
-
- .temoignage img{
-   border-radius: 50%;
- }
-
- .temoignage .textes{
-   text-align: left;
- }
-
- .sponsor{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  
- }
- .sponsor img{
-   max-width: 100px;
-   margin-top: auto;
-   margin-bottom: auto;
- }
-
- .footer{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
- }
- .footer .link{
-   margin-top: 1rem;
- }
- 
-
- .reseaux{
-  display:flex;
-  justify-content: flex-end;
-
-  margin-top: 50px;
-  
- }
-
- .reseaux .icon{
-  fill: #46dbc9;
-  background-color: #d4f7f3;
-  max-width: 2rem;
-  padding: 0.2rem;
-  margin: 0.2rem;
-  border-radius: 10px;
-
- }
-
- .legal_content{
-   text-align:center;
- }
-
 
 /* ##################################################################
 ##################        TARIFS        ########################

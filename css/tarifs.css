@@ -1,0 +1,166 @@
+/*  #####################################################################
+    #####                                                           #####      
+    #####                         TARIFS                            #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Mobile Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
+@media screen and (min-width: 360px) {
+    .bloc#reverse{
+        display:flex;
+        flex-direction: column-reverse;
+      }
+    
+    .pricing_bloc{
+        text-align:center;
+      }
+      
+      .pricing_bloc .title{
+        font-size: 30px;
+        
+      }
+      
+      .forfait{
+        border: solid #f0f4fb;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-top:2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      
+      .forfait:hover{
+        border: solid #46dbc9;
+      }
+      
+      .forfait .title{
+        margin: 0rem;
+        margin-bottom: 1.5rem;
+        
+      }
+      
+      .forfait .textes:first-of-type{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+      }
+      
+      
+      .description{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 1rem;
+      }
+      
+      .description .textes {
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      
+      .description .icon{
+        width: 2rem;
+        fill: #46dbc9;
+      }
+      
+      .description #not_green{
+        fill: gray;
+      }
+      
+      .description #barre{
+        text-decoration:line-through
+      }
+      
+      .forfait .button{
+        background-color: #ffff;
+        border: 2px solid gray;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 10px;
+      }
+      
+      .forfait .button:hover{
+        background-color: #46dbc9;
+        border: none;
+      }
+      
+      .question_bloc{
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+      
+      .frequent_question{
+        text-align: left;
+        
+      }
+      
+      .frequent_question .title{
+        font-size: 20px;
+      }
+      
+      .frequent_question .textes{
+        margin-left: 2rem;
+        border-left: 3px solid #46dbc9;
+        padding-left: 1rem;
+      }
+}
+
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Medium Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
+@media screen and (min-width: 768px) {
+    .description{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1rem;
+      }
+}
+
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Big Format                          #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
+@media screen and (min-width: 1024px) {
+    .bloc#reverse{
+        display:grid;
+      }
+
+    .forfait_bloc{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 0.5em;
+        grid-auto-rows: minmax(100px, 38rem);
+        margin-bottom: 3rem;
+    }
+
+    .forfait:hover{
+        margin-top: 5%;
+        margin-bottom: -5%;
+    }
+    
+    .description{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 1rem;
+    }
+
+}

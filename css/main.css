@@ -1,3 +1,16 @@
+/*  #####################################################################
+    #####                                                           #####      
+    #####                   HEADER + HOME + FOOTER                  #####
+    #####                                                           #####      
+    ##################################################################### 
+  
+    #####################################################################
+    #####                                                           #####      
+    #####                           General                         #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
 @font-face {
   font-family: "Mulish";
   src: url("../fonts/mulish/static/Mulish-Regular.ttf");
@@ -21,11 +34,14 @@ body{
   margin-right: auto;
 }
 
-/* ######################################
-################### MOBILE ###################
-###################################### */
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Mobile Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
 
-@media screen and (min-width: 365px) {
+@media screen and (min-width: 360px) {
   
   body{
     /* background-color: purple; */
@@ -152,9 +168,9 @@ body{
   }
 
   .bloc_temoignage{
-    /* display: flex; */
     margin-bottom: 1rem;
   }
+
   .grp_temoignage{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -170,7 +186,7 @@ body{
     padding-left: 1rem;
   }
 
-  .grp_temoignage .spacer{
+  .spacer{
     height: 0.5rem;
     width: 3rem;
     border-radius: 10px;
@@ -219,7 +235,6 @@ body{
     overflow-x: scroll;
     padding: 1rem 0;
     scroll-snap-type: x mandatory;
-    
   }
 
   .sponsor img{
@@ -245,7 +260,6 @@ body{
     justify-content: center;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    
   }
 
   .reseaux .icon{
@@ -255,7 +269,6 @@ body{
     padding: 0.2rem;
     margin: 0.2rem;
     border-radius: 10px;
-
   }
 
   .legal_content{
@@ -278,9 +291,13 @@ body{
   }
 }
 
-/* ######################################
-################### MEDIUM ###################
-###################################### */
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Medium Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
 @media screen and (min-width: 600px) {
 
   .en-tete{
@@ -367,7 +384,12 @@ body{
 
 }
 
-/* #####################################################################*/
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Medium Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
 
 @media screen and (min-width: 760px) {
   
@@ -391,6 +413,7 @@ body{
   .en-tete{
     background-color: #f5f8ff;
     display: flex;
+    justify-content: space-between;
     min-height: 50px;
     padding-top: 1rem;
   }
@@ -411,19 +434,11 @@ body{
   }
   
   .en-tete .link{
-    position:absolute;
-    right: 10%;
-    z-index: 1;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 0.5rem;
     background-color: #ffff;
     border-radius: 10px;
-    padding: 0.5rem;
-  }
-  
-  .link a{
-    color: #546da5;
     padding: 0.5rem;
   }
   
@@ -517,16 +532,6 @@ body{
     padding-top: 8rem;
   }
   
-  .grp_temoignage .spacer{
-    height: 0.5rem;
-    width: 3rem;
-    border-radius: 10px;
-    background-color: #46dbc9;
-    margin: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
   .grp_temoignage .title{
     font-size:1.5rem;
     text-align: center;
@@ -595,9 +600,13 @@ body{
   
 }
 
-/* ######################################
-################### BIG ###################
-###################################### */
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Big Format                          #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
 @media screen and (min-width: 1023px) {
 
   .bloc#reverse{
@@ -646,8 +655,12 @@ body{
   }
 }
 
-
-/* #####################################################################*/
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Big Format                          #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
 
 @media screen and (min-width: 1280px) {
   
@@ -696,111 +709,4 @@ body{
     margin-bottom: 0rem;
    } 
 
-} 
-
-/* ##################################################################
-##################        TARIFS        ########################
-################################################################## */
-
-.forfait_bloc{
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 1em;
-  grid-auto-rows: minmax(100px, auto);
-
-}
-  
-.pricing_bloc{
-  text-align:center;
-}
-
-.pricing_bloc .title{
-  font-size: 30px;
-  
-}
-
-.forfait{
-  border: solid #f0f4fb;
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-.forfait:hover{
-  border: solid #46dbc9;
-}
-
-.forfait .title{
-  margin: 0rem;
-  margin-bottom: 1.5rem;
-  
-}
-
-.forfait .textes:first-of-type{
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-
-.description{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-
- 
-}
-
-.description .textes {
-  text-align: left;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.description .icon{
-  min-width: 2rem;
-  fill: #46dbc9;
-}
-
-.description #not_green{
-  fill: gray;
-}
-
-.description #barre{
-  text-decoration:line-through
-}
-
-.forfait .button{
-  background-color: #ffff;
-  border: 2px solid gray;
-  margin-top:2rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 10px;
-}
-
-.forfait .button:hover{
-  background-color: #46dbc9;
-  border: none;
-}
-
-.question_bloc{
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.frequent_question{
-  text-align: left;
-  
-}
-
-.frequent_question .title{
-  font-size: 20px;
-}
-
-.frequent_question .textes{
-  margin-left: 2rem;
-  border-left: 3px solid #46dbc9;
-  padding-left: 1rem;
 }

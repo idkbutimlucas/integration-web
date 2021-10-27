@@ -1,0 +1,121 @@
+/*  #####################################################################
+    #####                                                           #####      
+    #####                           BLOG                            #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Mobile Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
+@media screen and (min-width: 360px) {
+    .title{
+        font-size:20px;
+    }
+
+    .bg_img{
+        background-color: #f5f8ff;
+        padding-top: 2rem;
+    }
+
+    .presentation .img{
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+
+    }
+
+    .spacer {
+        width: 0.5rem;
+        height: 3rem;
+    }
+
+    .blog_article{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .blog_article .title:first-of-type{
+        text-align: center;
+        margin-left: 10%;
+        margin-right:10%;
+    }
+
+    .question .textes{
+        border-left: 3px solid #46dbc9;
+        padding-left: 0.5rem;
+    }
+    
+    .enum .textes{
+        margin-top: -1rem;
+        padding-left: 1rem;
+    }
+
+    .enum .pts:first-of-type{
+        margin-top: 2rem;
+    }
+
+    .pts{
+        background-color: #46dbc9;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 30%;
+    }
+
+    .illustration img{
+        width: 100%;
+    }
+
+    .illustration .textes{
+        border-left: 3px solid #46dbc9;
+        margin-top: 0.2rem;
+        padding-left: 0.2rem;
+    }
+
+    .footer{
+        margin-top: 3rem;
+    }
+}
+
+/*  #####################################################################
+    #####                                                           #####      
+    #####                          Big Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+
+@media screen and (min-width: 1280px) {
+
+    .title{
+        font-size:35px;
+    }
+    .textes{
+        font-size:18px;
+    }
+
+    .blog_article{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        width:80%;
+    }
+
+    .blog_article .textes#first_texte{
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
+    }
+
+    .article{
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;
+    }
+}

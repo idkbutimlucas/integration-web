@@ -1,0 +1,85 @@
+/*  #####################################################################
+    #####                                                           #####      
+    #####                           BLOG_LISTE                      #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Mobile Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+@media screen and (min-width: 360px) {
+    .en-tete{
+        padding-bottom: 1rem;
+    }
+    .first_bloc{
+        padding-top:2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+        background-color: #f5f8ff ;
+    }
+
+    .bloc svg {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width:80%;
+    }
+
+    .main_bloc{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .main_bloc .title{
+        margin-bottom: 2rem;
+    }
+
+    #name,#email,#phone{
+        width: 20rem;
+    }
+
+    .form-example{
+        text-align: left;
+    }
+
+    .form-example#button{
+        margin-top: 1rem;
+    }
+
+    .textes#formulaire{
+        margin-top: 1rem;
+    }
+
+    .footer{
+        margin-top: 1rem;
+    }
+}
+
+/*  #####################################################################
+    #####                                                           #####      
+    #####                       Medium Format                       #####
+    #####                                                           #####      
+    ##################################################################### 
+*/
+@media screen and (min-width: 600px) {
+    .main_bloc{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        text-align: center;
+    }
+
+    .form-example{
+        text-align: center;
+    }
+    input{
+        border: 2px solid #b6b7b8;
+
+        border-radius: 10px;
+    }
+    .footer{
+        margin-top: 5rem;
+    }
+}

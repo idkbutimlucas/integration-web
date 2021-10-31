@@ -22,6 +22,10 @@
         background-color: #f5f8ff ;
     }
 
+    .bloc{
+        background-color: #f5f8ff;
+    }
+
     .bloc svg {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -47,6 +51,16 @@
 
     .form-example#button{
         margin-top: 1rem;
+    }
+
+    input#button{
+        background-color: #46dbc9 ;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    input#button:hover{
+        background-color: #d4f7f3 ;
     }
 
     .textes#formulaire{

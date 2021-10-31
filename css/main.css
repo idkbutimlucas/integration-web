@@ -32,6 +32,7 @@ body{
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Mulish";
 }
 
 /*  #####################################################################
@@ -44,7 +45,6 @@ body{
 @media screen and (min-width: 360px) {
   
   body{
-    /* background-color: purple; */
     font-size: size 16px;
   }
 
@@ -93,11 +93,15 @@ body{
     text-align: center;
   }
 
+  .link a:hover{
+    background-color: #d4f7f3;
+  }
+
   .bloc{
     margin-bottom: 3rem;
   }
 
-  .bloc:first-child{
+  .bloc:first-of-type{
     padding-bottom: 3rem;
     padding-top: 3rem;
     background-color: #f5f8ff;
@@ -135,6 +139,10 @@ body{
     border-radius: 10px;
   }
 
+  .bloc .button:hover{
+    background-color:#d4f7f3;
+  }
+
   .bloc_feature .icon{
     max-width:3rem;
   }
@@ -149,7 +157,6 @@ body{
   .elements{
     margin: 0.5em;
     margin-top: -1.5rem;
-
   }
 
   .elements svg{
@@ -451,12 +458,6 @@ body{
     margin-bottom: 3rem;
   }
   
-  .bloc:first-child{
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    background-color: #f5f8ff;
-  }
-  
   .bloc .left{
     margin-top: auto;
     margin-bottom: auto;
@@ -578,7 +579,8 @@ body{
   }
   
   .footer .link{
-    margin-top: 1rem;
+    margin-top: -0.5rem;
+    padding-bottom: 3rem;
   }
 
   .reseaux .icon{

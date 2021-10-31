@@ -16,6 +16,9 @@
         display:flex;
         flex-direction: column-reverse;
       }
+      .bloc{
+        background-color: #f5f8ff;
+      }
     
     .pricing_bloc{
         text-align:center;

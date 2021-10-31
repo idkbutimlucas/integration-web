@@ -26,9 +26,8 @@
         padding-top: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        border-top-right-radius: 10%;
-        border-top-left-radius: 10%;
-
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
     }
 
     .spacer {
